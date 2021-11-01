@@ -1,0 +1,67 @@
+/* selector {
+    property: value;
+    property: value;
+    property: value
+} */
+
+* {
+    color: rgb(65, 7, 104);
+}
+
+h1 {
+    color: green;
+    font-weight: bold;
+}
+
+/* this is a sungle line comment */
+
+#first-p {
+    background-color: beige;
+}
+/*
+this is
+multiple 
+line
+comment 
+ */
+.desc {
+    border: 1px solid rgb(65, 7, 104);
+}
+
+p:hover {
+    color: blue
+}
+
+button:hover {
+    background-color: red;
+}
+
+p::first-line {
+    /* color: red; */
+    text-transform: uppercase;
+}
+
+#first-p::first-line {
+    color: gold;
+}
+
+a[target] {
+    background-color: yellow;
+}
+/* select all the ul tags with class of blue-border  */
+/* ul.blue-b {
+    border: 1px solid blue;
+} */
+
+/* all direct children of ul tags where the child has a class of blue-border */
+ul > .blue-b {
+    border: 1px solid blue;
+}
+
+/* .blue-b {
+    border: 1px solid blue;
+} */
+
+a.blue-b {
+    border: 1px solid blue;
+}
