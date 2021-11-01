@@ -1,67 +1,90 @@
 /* selector {
-    property: value;
-    property: value;
-    property: value
+    proprty: value;
+    proprty: value;
+    proprty: value;
+    proprty: value;
 } */
 
+
 * {
-    color: rgb(65, 7, 104);
+    color: purple 
+}
+
+img {
+    width: auto;
+    height: 250px;
 }
 
 h1 {
-    color: green;
-    font-weight: bold;
+    color: blue
 }
 
-/* this is a sungle line comment */
-
-#first-p {
-    background-color: beige;
-}
-/*
-this is
-multiple 
-line
-comment 
- */
-.desc {
-    border: 1px solid rgb(65, 7, 104);
+.conway {
+    color:red;
 }
 
+#lin {
+    color: gold;
+}
+
+
+
+button:hover {
+    background-color: blue;
+}
 p:hover {
     color: blue
 }
 
-button:hover {
-    background-color: red;
-}
-
 p::first-line {
-    /* color: red; */
     text-transform: uppercase;
 }
+
+p::before {
+   content: "😊" ; 
+}
+
+p::after {
+    content:" after"; 
+}
+
 
 #first-p::first-line {
     color: gold;
 }
 
 a[target] {
-    background-color: yellow;
+    background-color: gold;
 }
-/* select all the ul tags with class of blue-border  */
-/* ul.blue-b {
+
+
+/* Selects all <p> elements where the parent is a <div> element */
+div > p {
+    font-size: 10px;
+}
+/* Selects the first <p> element that is placed immediately after <div> elements */
+div + p {
+    font-size: 25px;
+}
+
+
+/* ul .blue-b {
     border: 1px solid blue;
 } */
 
-/* all direct children of ul tags where the child has a class of blue-border */
-ul > .blue-b {
+ul ol .blue-b {
     border: 1px solid blue;
 }
 
-/* .blue-b {
-    border: 1px solid blue;
-} */
 
-a.blue-b {
-    border: 1px solid blue;
-}
+
+
+
+
+
+
+
+
+
+
+
